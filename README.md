@@ -79,7 +79,7 @@ Sample data: `sampledata.sql`
     ```bash
     npm start
     ```
-    Frontend URL: [Add your deployed frontend link here]
+    Frontend URL: [https://crud-task-management.vercel.app/]
 
 ---
 
@@ -96,18 +96,6 @@ Sample data: `sampledata.sql`
 
 ---
 
-## Deployment
-
-- Backend: [backend live](https://crud-task-management.onrender.com)
-- Frontend: [frontend live link]()
-
----
-
-## Demo Video
-
-- [demo](https://drive.google.com/file/d/1KydOTxrKUsvSMVuQxkOY7T8vQiDnicWx/view?usp=sharing)
----
-
 ## Documentation Includes
 
 - Project Overview
@@ -118,6 +106,18 @@ Sample data: `sampledata.sql`
 - Deployment Details
 - Demo Link
 
+---
+
+## Deployment
+
+- Backend: [backend live](https://crud-task-management.onrender.com)
+- Frontend: [frontend live link](https://crud-task-management.vercel.app/)
+
+---
+
+## Demo Video
+
+- [demo](https://drive.google.com/file/d/1KydOTxrKUsvSMVuQxkOY7T8vQiDnicWx/view?usp=sharing)
 ---
 
 ## GitHub Repository
