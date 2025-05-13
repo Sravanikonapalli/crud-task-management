@@ -1,0 +1,190 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fc;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Task Form Styles */
+.task-form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.task-form h2 {
+  margin-top: 0;
+}
+
+.task-form input, .task-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.task-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.task-form button:hover {
+  background-color: #218838;
+}
+
+.cancel-btn{
+  background-color: #dc3545 !important;
+  width: auto;
+  padding: 8px 15px;
+  font-size: 14px;
+  width: 300px !important;
+}
+
+.cancel-btn:hover {
+  background-color: #c82333;
+}
+.submit-btn{
+  width: auto;
+  padding: 8px 15px;
+  font-size: 14px;
+  background-color: #28a745; 
+  color: white;
+  width: 300px !important;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+.task-form .buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.task-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+/* Search Bar Styles */
+.search-bar {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.search-bar input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Task Card Styles */
+.task-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-card h3 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.task-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.task-card button {
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.task-card button:hover {
+  background-color: #e0a800;
+}
+
+.task-card button:active {
+  background-color: #c69500;
+}
+
+.task-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .search-bar input {
+    width: 80%;
+  }
+
+  .task-form input, .task-form textarea {
+    font-size: 14px;
+  }
+
+  .task-card button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .task-form .buttons-container {
+    flex-direction: column;
+  }
+}
