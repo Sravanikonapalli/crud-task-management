@@ -16,7 +16,7 @@ const App = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await fetch('http://localhost:3000/tasks');
+      const response = await fetch('https://crud-task-management.onrender.com/tasks');
       const data = await response.json();
       setTasks(data);
     } catch (error) {
@@ -26,7 +26,7 @@ const App = () => {
 
   const handleCreateTask = async (task) => {
     try {
-      const response = await fetch('http://localhost:3000/tasks', {
+      const response = await fetch('https://crud-task-management.onrender.com/tasks', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(task),
@@ -42,7 +42,7 @@ const App = () => {
 
   const handleUpdateTask = async (task) => {
     try {
-      const response = await fetch(`http://localhost:3000/tasks/${task.id}`, {
+      const response = await fetch(`https://crud-task-management.onrender.com/tasks/${task.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(task),
@@ -59,7 +59,7 @@ const App = () => {
 
   const handleDeleteTask = async (taskId) => {
     try {
-      await fetch(`http://localhost:3000/tasks/${taskId}`, { method: 'DELETE' });
+      await fetch(`https://crud-task-management.onrender.com/tasks/${taskId}`, { method: 'DELETE' });
       await fetchTasks();
     } catch (error) {
       console.error('Error deleting task:', error);
